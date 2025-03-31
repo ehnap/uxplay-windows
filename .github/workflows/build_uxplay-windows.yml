@@ -65,6 +65,8 @@ jobs:
         shell: msys2 {0}
         run: |
           git clone https://github.com/FDH2/UxPlay && cd UxPlay
+          git pull
+          git checkout v1.71.1
           mkdir build && cd build
           cmake ..
           ninja
